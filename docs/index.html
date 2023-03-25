@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/_dist/style.min.css">
+  <title>系统文档</title>
+</head>
+<body>
+  <!-- <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav> -->
+  <div id="app"></div>
+  <script>
+      
+    window.$docsify = {
+      loadSidebar: true,
+      loadNavbar: false,
+      coverpage: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      name: '<span>业聘-操作手册</span>',
+      // search config
+      search: 'auto', // 默认值
+
+      search : [
+        '/_page/intro/index',
+      ],
+
+      // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: '关键词',
+
+        // 支持本地化
+        placeholder: {
+          '/': '关键词'
+        },
+
+        noData: '没有查找到相关内容',
+
+        // 支持本地化
+        noData: {
+          '/': '没有查找到相关内容'
+        },
+        depth: 2,
+
+        hideOtherSidebarContent: false, 
+        namespace: 'website-1',
+
+        /* pathNamespaces: ['/','/_page'], */
+      }
+
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="/_dist/docsify.js"></script>
+  <script src="/_dist/search.min.js"></script>
+  <script src="/_dist/index.min.js"></script>
+</body>
+</html>
